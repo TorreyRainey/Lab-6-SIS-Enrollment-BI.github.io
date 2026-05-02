@@ -1,0 +1,23 @@
+Question 1: In a student information system (SIS) dashboard, what are 3 descriptive analytics KPIs you would show for one term, and what does each KPI tell you
+Answer: The three descriptive KPIs are the total enrolled, total dropped, and the average grade. The total enrolled shows how many students signed up for classes and it tells you the overall demand. Total dropped shows how many students dropped their courses, which can show the registration issues. Average grade shows how well the students performed in their courses, which helps you see if students are doing well or struggling. 
+
+Qeustion 2: Using SIS enrollment data, how do you calculate and interpret the drop rate for a course in a term? What would a high drop rate suggest?
+Answer: 
+Calculation: drop rate = dropped / (enrolled + dropped) 
+
+Example: 
+If a course has 12 students enrolled and 3 of the, dropped:
+
+Drop rate = 3 / (12+3) = 3/15 =0.2 0.20 = 20%
+
+Interpretation: 
+A 20% drop means 1 out of every 5 students left the course. If it has a high drop rate shows that the course could difficult, missing prerequisites, and not enough support in the course. 
+
+Question 3: In the SIS BI context, explain the difference between transactional (OLTP) tables and a data-warehouse summary table. Why is the summary table better for descriptive reporting and OLAP “slice & dice”?
+Answer: 
+
+OLTP Tables: store detailed, day-to-day data for each student (courses, enrollment, drop, and grade). They are used for regular operations for adding and updating the records. 
+
+Data-warehouse summary tables: store grouped data such as the total students enrolled, the total dropped, and the average grade for the course and the terms. 
+
+Why summary tables are better for BI/OLAP: Makes reporting faster since the data is already calculated. This allows the user to compare “slice and dice” data quickly by term, course, and department without dealing with the large, complex tables. 
